@@ -14,6 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 
+/**
+ * /@RequestParam, @ModelAttribute를 사용해서 값을 조회하는 경우 :
+ * 1. GET 방식에서 queryParam으로 넘어오는 값이 있을 때
+ * 2. POST 방식으로 html form data를 전송 받는 방식(x-www-form-urlencoded)으로 넘어오는 값이 있을 때
+ */
 @Slf4j
 @Controller
 public class RequestParamController {
@@ -165,5 +170,4 @@ public class RequestParamController {
                 helloData.getAge());
         return "ok";
     }
-
 }
