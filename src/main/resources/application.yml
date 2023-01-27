@@ -2,3 +2,7 @@
 logging:
   level:
     hello.springmvc: debug
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/ #기본값
+    suffix: .html #기본값
